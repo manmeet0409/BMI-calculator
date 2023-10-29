@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<style type="text/css">
+	html{
+		width: 100%;
+		height: 100%;
+		display: table;
+	}
+	body{
+		display: table-cell;
+		vertical-align: middle;		
+	}
+	form{
+		border: 2px solid black;
+		display: table;
+		margin: auto;
+		padding: 17px;
+		box-shadow: 5px 3px 9px;
+		background-color: azure;
+	}
+	.button{
+		padding-top: 20px;
+		display: flex;
+		justify-content:center;
+	}
+	h1{
+		text-align: center;
+	}
+</style>
+<body>
+<form>
+	<h1>BMI Calculator</h1>
+	Weight:<input type="text" id="weight_876" ><!--weight textbox-->
+	<!--radio buttons to select the units-->
+	<input type="radio" name="wUnit_876" value="0.4535">lbs
+	<input type="radio" name="wUnit_876" value="1">kg
+	<br><br>
+
+	Height:<input type="text" id="height_876" > <!--height textbox-->
+	<!--radio buttons to select the units-->
+	<input type="radio" name="hUnit_876" value="0.0254">
+	<label for="age1">inches</label>
+	<input type="radio" name="hUnit_876" value="0.3048">
+	<label for="age1">feet</label>
+	<input type="radio" name="hUnit_876" value="0.01">
+	<label for="age1">cm</label>
+	<input type="radio" name="hUnit_876" value="1">
+	<label for="age1">metre</label>
+	<br>
+
+	<!--button to execut-->
+	<div class="button">
+	<input onclick=" bmiCalculator_876()" type="button" value="Calculate">
+	</div><br>
+	<div id="bmi_876">Answer: </div>
+</form>
+<script src="Assign1_876.js"></script>
+</body>
+</html>
